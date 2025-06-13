@@ -1,0 +1,21 @@
+include .BaseBot.env
+export
+
+run_bot:
+	@echo "Launching Telegram-bot"
+	. ./.venv/bin/activate && cd ./src/ && python3 main.py
+run_dev:
+	@echo "Launching Telegram-bot"
+	 cd ./src/ && python3 main.py
+
+install:
+	sudo apt update && sudo apt upgrade
+	sudo apt install redis
+	python3.11 -m venv .venv
+	. .venv/bin/activate && pip install -r requirements.txt
+	. .venv/bin/activate && cd ./src/ && mkdir -p alembic/versions/ && alembic revision --autogenerate -m 'init' && alembic upgrade head
+
+uninstall:
+	rm -rf .venv
+	rm -rf src/alembic/versions/
+	rm -rf src/database.db
