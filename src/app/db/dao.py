@@ -85,9 +85,9 @@ class BaseDAO:
 
     @classmethod
     @with_session
-    async def update_by_id(cls, session: AsyncSession, id: int, **kwargs):
+    async def update_by_id(cls, session: AsyncSession, id_: int, **kwargs):
         '''id field mandatory'''
-        query = select(cls._model).where(cls._model.id == id)
+        query = select(cls._model).where(cls._model.id == id_)
         result = await session.scalars(query)
         instance = result.first()
         if instance:
