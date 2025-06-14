@@ -19,3 +19,10 @@ uninstall:
 	rm -rf .venv
 	rm -rf src/alembic/versions/
 	rm -rf src/database.db
+update:
+        . .venv/bin/activate && pip install -r requirements.txt
+
+run_alembic:
+        . .venv/bin/activate && cd ./src/ && mkdir -p alembic/versions/ && alembic revision --autogenerate -m '$(comment)' && alembic upgrade head
+
+
