@@ -1,6 +1,6 @@
 # BaseBot TEMPLATE
 
-![Логистика](./img/baner.jpg)
+![Basebot](./img/baner.jpg)
 
 > [!IMPORTANT]
 > Должен быть установлен Python3.11 и python3.11-venv
@@ -8,7 +8,9 @@
 > [Установка Python3.11](https://zomro.com/rus/blog/faq/473-installing-python-311-on-ubuntu-2204)
 
 ## Конфигурация
-- Создайте `src/config/config.ini` как `src/config/config.ini.example`, предварительно создав токен бота в Botfather.
+- Эта версия проекта работает с PostgreSQL
+- Доступен скрипт Docker
+- Создайте `.BaseBot.env` как `.BaseBot.env.example`, предварительно создав токен бота в Botfather.
 
 ## Как запустить локально
 1. Установите всё, что нужно командой `make install`
