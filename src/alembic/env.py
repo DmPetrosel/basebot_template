@@ -5,13 +5,14 @@ sys.path.append("..")
 from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
-from app.db.initdb import AsyncBase, DATABASE_URL
+from app.db.initdb import AsyncBase
+from config.settings import DSN
 from alembic import context
 from app.db.models import * # nodeb
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-config.set_main_option("sqlalchemy.url", DATABASE_URL)
+config.set_main_option("sqlalchemy.url", DSN)
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
 if config.config_file_name is not None:

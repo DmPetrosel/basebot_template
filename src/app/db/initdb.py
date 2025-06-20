@@ -2,8 +2,9 @@ from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine, Asyn
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, func, Table, Boolean, Float
 from sqlalchemy.orm import DeclarativeBase, declared_attr
 # TODO Write necessary database name
-db_name="database"
-DATABASE_URL = f"sqlite+aiosqlite:///./{db_name}.db"
+# db_name="database"
+# DATABASE_URL = f"sqlite+aiosqlite:///./{db_name}.db"
+
 engine = create_async_engine(url=DATABASE_URL)
 from collections.abc import Callable
 from functools import wraps
