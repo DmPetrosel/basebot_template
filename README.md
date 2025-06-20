@@ -40,7 +40,6 @@ WantedBy=multi-user.target
 python3.11 -m venv .venv
 source ./venv/bin/activate
 pip install -r requirements.txt
-sd src
 alembic revision --autogenerate -m 'init'
 alembic upgrade head
 ```
