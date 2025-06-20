@@ -1,0 +1,13 @@
+[bot]
+token=TOKEN_API
+[project]
+name=soft_possibility_bot
+[db]
+dbname=soft_possibility_db
+user=softskills
+pass=678
+host=localhost
+port=5430
+driver=postgresql+asyncpg
+[clicks]
+max_clicks=2000

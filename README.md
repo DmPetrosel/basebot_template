@@ -1,6 +1,6 @@
 # BaseBot TEMPLATE
 
-![Логистика](./img/baner.jpg)
+![Basebot](./img/baner.jpg)
 
 > [!IMPORTANT]
 > Должен быть установлен Python3.11 и python3.11-venv
@@ -9,6 +9,7 @@
 
 ## Конфигурация
 - Создайте `src/config/config.ini` как `src/config/config.ini.example`, предварительно создав токен бота в Botfather.
+- Эта версия проекта работает с SQLite
 
 ## Как запустить локально
 1. Установите всё, что нужно командой `make install`
