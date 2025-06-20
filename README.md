@@ -3,7 +3,7 @@
 ![Basebot](./img/baner.jpg)
 
 > [!IMPORTANT]
-> Должен быть установлен Python3.11 и python3.11-venv
+> Должен быть установлен Python3.11 и python3.11-venv для разработки
 
 > [Установка Python3.11](https://zomro.com/rus/blog/faq/473-installing-python-311-on-ubuntu-2204)
 
