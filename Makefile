@@ -16,7 +16,7 @@ install:
 	sudo apt install redis
 	python3.11 -m venv .venv
 	. .venv/bin/activate && pip install -e . -U
-	. .venv/bin/activate && && mkdir -p src/alembic/versions/ && alembic revision --autogenerate -m 'init' && alembic upgrade head
+	. .venv/bin/activate && cd ./src && mkdir -p src/alembic/versions/ && alembic revision --autogenerate -m 'init' && alembic upgrade head
 
 install_dev:
 	pip install -e .[dev,test] -U
