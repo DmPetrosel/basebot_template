@@ -7,7 +7,7 @@
 
 > [Установка Python3.11](https://zomro.com/rus/blog/faq/473-installing-python-311-on-ubuntu-2204)
 
-> [!NOTICE]
+> [!NOTE]
 > Может понадобиться Docker
 
 > [Установка Docker](https://timeweb.com/ru/community/articles/kak-ustanovit-docker-na-ubuntu-22-04)
